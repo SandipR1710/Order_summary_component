@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    min-width: 100vw;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size:cover;
+
+}
+.top{
+    width:350px;
+    height:180px;
+    background-image: url('images/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    border-radius:15px 15px 0 0;
+}
+.bottom{
+    width:350px;
+    height:360px;
+    padding:30px 30px 0 30px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:0 0 15px 15px;
+}
+.summary{
+    font-size: 22px;
+    font-weight:900;
+    color:hsl(223, 47%, 23%);
+}
+.des{
+    font-size: 14px;
+    color:hsl(224, 23%, 55%);
+    
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    padding: 20px;;
+    background-color: hsl(225, 100%, 98%);
+    border-radius:10px;
+    margin:20px 0;
+}
+.ms{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:4px;
+}
+.annual,.price{
+    font-size:14px;
+}
+.annual{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.price{
+    color:hsl(224, 23%, 55%);
+}
+.icon{
+    width: 40px;
+}
+.link{
+    font-size: 12px;
+    color:hsl(245, 75%, 52%);
+    font-weight:700;
+}
+.button{
+    width:95%;
+    height:40px;
+    border:0;
+    color:white;
+    background-color:hsl(245, 75%, 52%);
+    border-radius:10px;
+    box-shadow:0 10px 15px rgb(117 106 236 / 0.5);
+}
+.button:hover{
+    background-color:rgb(117, 106, 236);
+}
+.btext{
+    font-size:11px;
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin:20px 0; 
+}
+@media (max-width:600px){
+    .top{
+        width:300px;
+        height:150px;
+    }
+    .bottom{
+        padding:20px 20px 0 20px;
+        width:300px;
+    }
+    .des{
+        padding: 10px;
+    }
+    .mid{
+        gap:40px;
+        margin:12px 0;
+    }
+    .ms{
+        gap:15px;
+    }
+    .button{
+        height:45px;
+    }
+}
